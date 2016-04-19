@@ -1,0 +1,128 @@
+
+	@font-face {
+	    font-family: Murder;
+	    src: url(Murder.ttf);
+	}
+
+	*{
+		margin: 0;
+	}
+
+	body {
+	  background-color: #1D1F20;
+	  color: #D6D6D6;
+	}
+
+	main {
+		display: -webkit-flex;
+		-webkit-align-items: center;
+		-webkit-flex-flow: column;
+		-webkit-justify-content: center;
+
+		position: absolute;
+		height: 100%; width: 100%;
+		left: 0;top: 0;
+	}
+
+	header {
+		font-family: Murder, Arial;
+		font-size: 5em;
+		margin-top: .6em;
+		text-align: center;
+
+	}
+
+	header > * {
+		font-weight: normal;
+		margin: 0;
+	}
+
+	header > h1 {
+		line-height: .9em;
+	}
+
+	header > h2 {
+	    font-size: .9em;
+	    color: #71424B;
+	}
+
+	main {
+	    /*margin: 2em auto;*/
+	    font-family: Murder, Arial;
+	    font-size: 3em;
+	    line-height: .9em;  
+	}
+	main p {
+		width: 50%;
+		margin: .4em;
+	}
+	main p:first-letter {
+		float: left;
+		font-size: 300%;
+		margin-right: .1em;
+		line-height: .5em;
+	}
+	
+	.logo {
+		height: 100px;
+		margin-top: 1em;
+	}
+	.credit {
+		font-size: 1.7em;
+	    font-family: Murder, Arial;
+	    margin-top: -.7em;
+	    margin-left: -.3em;
+	}
+
+	@media (max-width: 800px) {
+		header h1 sub {
+			vertical-align: initial;
+		}
+
+		main p {
+			width: initial;
+		    margin: 0 .8em;
+		    padding: 0 1em;
+		}
+		
+		main {
+			display: initial;
+			position: initial;
+			height: initial;
+			width: initial;
+		}
+
+		footer {
+			text-align: center;
+		}
+
+	}
+	@media (min-width: 801px) {
+		header sub {
+			margin-left: 12px;
+		}
+		header > h2 {
+			margin-top: -.9em;
+			margin-left: -2.5em;
+		}
+		footer {
+			position: absolute;
+		    bottom: .5em;
+		    text-align: center;
+
+    		width: 100%;
+		}
+	}
+
+	@media (max-height: 700px) {
+ 		main {
+ 			display: initial;
+ 			position: initial;
+ 		}
+ 	    main p {
+ 	    	margin: 0 auto;
+ 	    }
+ 	    footer {
+ 	    	position: initial;
+ 	    }
+ 	}
